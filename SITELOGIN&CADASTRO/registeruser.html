@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>"ATIVIDADE EM DUPLA"</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=p5TG6GNbP4frdga7be5ShXNLsemV9zKykoHdVrZJIf8itPdazI3l-7Hpovs7AyWaWshy0vlweV1q0f-R4u1Y7JZnLydjWJUR3pAJebUXiolgo_YlrBm2j7UJ1ozUdXYzgnRcZ0KAhg_g-uiBmvkviA" charset="UTF-8"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+
+        body{
+            background-color: #054f77; 
+        }
+
+        .form-container{
+            position: absolute;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px black;
+            margin-top: 150px;
+            margin-left: 550px;
+        }
+
+        .login-container{
+            position: absolute;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px black;
+            margin-top: 250px;
+            margin-left: 250px;
+        }
+
+        .container{
+            display: flex;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="registerContainer">
+
+            <form action="register.php" method="post" class="form-container">
+
+                <img src="imagens/profile.png" width=100 class="mx-auto d-block">
+                <h3 class="text-center">CADASTRO</h3>
+
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name" placeholder="Usuário" 
+                class="form-control" required>
+                
+            
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="usuario@gmail.com" 
+                class="form-control" required>
+                
+            
+                <label for="address">Endereço:</label>
+                <input type="text" name="address" id="address" placeholder="R. Guido Leão" 
+                class="form-control" required>
+                
+            
+                <label for="password">Senha:</label>
+                <input type="password" name="password" id="password" placeholder="12345678" 
+                minlength="8" maxlength="16" class="form-control" required>
+                <br>
+            
+                <select name="sex" id="sex" class="btn btn-secondary dropdown-toggle" required>
+                    <option value="">SELECIONE SEU GÊNERO</option>
+                    <option value="M">Masculino</option>
+                    <option value="F">Feminino</option>
+                    <option value="O">Outro</option>
+                </select>
+                <br><br>
+            
+                <button type="submit" name="register" class="btn btn-success btn-block">CADASTRE-SE</button>
+                
+            </form>
+
+</div>
+</body>
+</html>
